@@ -17,7 +17,8 @@ class PruebaDiego extends AbstractMigration
 
         //modificando la otra tabla
         $posts = $this->table('posts');
-        $posts->addColumn('tags', 'text');
+        $posts->addColumn('tags', 'text')
+              ->save();
     }
 
     /**
